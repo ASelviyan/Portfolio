@@ -57,7 +57,7 @@ export default function Navbar() {
                             </div>
                         </div>
                         <div className="border-b border-gray-300 my-4">
-                            <p className="text-black w-[85%] md:w-[90%] py-4">Let's build something legendary</p>
+                            <p className="text-black w-[85%] md:w-[90%] py-4">Let&apos;s build something legendary</p>
                         </div>
                     </div>
                     <div className="p-4 flex flex-col">

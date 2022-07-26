@@ -1,9 +1,8 @@
-import Image from 'next/image'
+
 import ticTacToeImg from '../public/assets/projects/tictactoe.PNG'
 import SuperHeroImg from '../public/assets/projects/superHero.PNG'
 import bugOutImg from '../public/assets/projects/bugOut.PNG'
 import EnsembleImg from '../public/assets/projects/Ensemble.PNG'
-import Link from 'next/link'
 import ProjectItem from '../components/ProjectItem'
 
 export default function Project() {
@@ -12,7 +11,7 @@ export default function Project() {
             <div className='w-full mt-24'>
                 {/* <div className='max-w-[1240px] mx-auto px-2 '> */}
                 <p className="text-xl tracking-widest uppercase">Projects</p>
-                <h2 className="py-4">Things I've Built </h2>
+                <h2 className="py-4">Things I&apos;ve Built </h2>
                 {/* <div className="grid md:grid-cols-2 gap-8"> */}
 
                 <section className="se-container">
