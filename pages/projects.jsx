@@ -15,10 +15,10 @@ export default function Project() {
                 <h2 className="py-4">Things I've Built </h2>
                 {/* <div className="grid md:grid-cols-2 gap-8"> */}
 
-                <section class="se-container">
+                <section className="se-container">
 
-                    <div class="se-slope">
-                        <article class="se-content">
+                    <div className="se-slope">
+                        <article className="se-content">
                             <ProjectItem
                                 title='Tic Tac Toe Game'
                                 backgroundImg={ticTacToeImg}
@@ -31,8 +31,8 @@ export default function Project() {
                     </div>
 
 
-                    <div class="se-slope">
-                        <article class="se-content">
+                    <div className="se-slope">
+                        <article className="se-content">
                             <ProjectItem
                                 title='Super Hero Application'
                                 backgroundImg={SuperHeroImg}
@@ -44,8 +44,8 @@ export default function Project() {
                         </article>
                     </div>
 
-                    <div class="se-slope">
-                        <article class="se-content">
+                    <div className="se-slope">
+                        <article className="se-content">
                             <ProjectItem
                                 title='BugOut Application'
                                 backgroundImg={bugOutImg}
@@ -58,8 +58,8 @@ export default function Project() {
                     </div>
 
 
-                    <div class="se-slope">
-                        <article class="se-content">
+                    <div className="se-slope">
+                        <article className="se-content">
                             <ProjectItem
                                 title='Ensemble Application'
                                 backgroundImg={EnsembleImg}

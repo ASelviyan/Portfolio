@@ -8,9 +8,9 @@ export default function Main() {
 
     return (
         <>
-            <section class="se-container">
-                <div class="se-slope">
-                    <article class="se-content">
+            <section className="se-container">
+                <div className="se-slope">
+                    <article className="se-content">
                         <div className='w-full text-center '>
                             <div>
                                 <Image src='/../public/assets/profilePic3.PNG' alt='/' width='260' height='240' className='rounded-full' />
@@ -21,14 +21,14 @@ export default function Main() {
                         </div>
                     </article>
                 </div >
-                <div class="se-slope">
-                    <article class="se-content">
+                <div className="se-slope">
+                    <article className="se-content">
                         <About />
                     </article>
                 </div>
 
-                <div class="se-slope">
-                    <article class="se-content">
+                <div className="se-slope">
+                    <article className="se-content">
                         <Skills />
                     </article>
                 </div>
