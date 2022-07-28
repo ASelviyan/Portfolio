@@ -13,7 +13,7 @@ export default function Navbar() {
     }
 
     return (
-        <div className="fixed top-0  w-full h-20 shadow-xl z-[100] bg-[#d6909b] ">
+        <div className="fixed top-0  w-full h-20 shadow-xl z-[100] bg-[#FF8FAB] ">
 
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
                 <h1>AS</h1>

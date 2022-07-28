@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-[#d6909b] text-white tracking-wide
+    @apply bg-[#FF8FAB] text-white tracking-wide
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -42,7 +42,7 @@
 	box-shadow: 0px -1px 3px rgba(255, 255, 255, 0.4);
 }
 .se-slope:nth-child(even){
-	background: #d6909b;
+	background: #FF8FAB;
 	transform: rotate(-5deg);
 	box-shadow: 0px 2px 3px rgba(255, 255, 255, 0.4) inset;
 }
@@ -52,7 +52,7 @@
 }
 
 .se-content h3{
-	font-size: 60px;
+	font-size: 40px;
 	position: relative;
 	display: inline-block;
 	padding: 10px 30px 8px 30px;
@@ -64,12 +64,12 @@
 	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9);
 }
 .se-slope:nth-child(odd) .se-content h3{
-	background: #d6909b;
+	background: #FF8FAB;
 	color: rgb(255, 255, 255);
 }
 .se-slope:nth-child(even) .se-content h3{
 	background: rgb(255, 255, 255);
-	color: #d6909b;
+	color: #FF8FAB;
 }
 /* .se-content h3:before{
 	content: '';
@@ -96,8 +96,8 @@
 
 .se-slope:nth-child(odd) .se-content h3:before,
 .se-slope:nth-child(odd) .se-content h3:after{
-	border-right-color: #d6909b;
-	border-left-color: #d6909b;
+	border-right-color: #FF8FAB;
+	border-left-color: #FF8FAB;
 }
 
 .se-content p{
@@ -105,7 +105,7 @@
 	max-width: 500px;
 	margin: 0 auto;
 	font-style: italic;
-	font-size: 18px;
+	font-size: 20px;
 	line-height: 24px;
 	padding-top: 10px;
 }
@@ -114,26 +114,59 @@
 	font-size: 40px;
 	font-family: 'Adobe Garamond Pro', Georgia, serif;
 }
-.regularP {
-	font-size: 20px;
+#regularP {
+	font-size: 25px;
 	font-style: italic;
+}
+
+#regularH3 {
+	font-size: 40px;
 }
 
 .se-slope:nth-child(odd) .se-content{
 	transform: rotate(-5deg);
-	color: #d6909b;
-	padding: 220px 100px 250px 100px;
+	color: #FB6F92;
+	padding: 200px 100px 300px 100px;
 }
 .se-slope:nth-child(even) .se-content{
 	transform: rotate(5deg);
 	color: rgb(255, 255, 255);
-	padding: 150px 100px 250px 100px;
+	padding: 200px 100px 300px 100px;
 }
 
 @media screen and (max-width: 900px) {
  .se-slope:nth-child(odd) .se-content{
 	transform: rotate(-5deg);
-	color: #d6909b;
-	padding: 220px 100px 100px 100px;
+	color: #FF8FAB;
+	padding: 70px 100px 100px 100px;
 }
+
+.se-slope:nth-child(even) .se-content{
+	transform: rotate(5deg);
+	color: rgb(255, 255, 255);
+	padding: 70px 100px 250px 100px;
+}
+
+#regularP {
+	font-size: 10px;
+	font-style: italic;
+}
+
+#regularH3 {
+	font-size: 20px;
+}
+
+.se-content h3{
+	font-size: 20px;
+	position: relative;
+	display: inline-block;
+	padding: 0px 30px 0px 30px;
+	height: 100px;
+	line-height: 80px;
+	margin-bottom: 20px;
+	border-radius: 30px;
+	font-family: 'Bitter', 'Trebuchet MS', Arial;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9);
+}
+
 }
