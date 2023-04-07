@@ -13,7 +13,7 @@ export default function Navbar() {
     }
 
     return (
-        <div className="fixed top-0  w-full h-20 shadow-xl z-[100] bg-[#FF8FAB] ">
+        <div className="fixed top-0  w-full h-[3.5rem] shadow-xl z-[100] bg-[#4f0230] lg:h-20 ">
 
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
                 <h1>AS</h1>
@@ -51,8 +51,8 @@ export default function Navbar() {
                 >
                     <div>
                         <div className='flex w-full items-center justify-between'>
-                            <h1 className="text-[#d6909b]">AS</h1>
-                            <div onClick={handleNav} className='rounded-full shadow-lg bg-[#d6909b] shadow-gray-400 p-3 cursor-pointer'>
+                            <h1 className="text-[#4f0230]">AS</h1>
+                            <div onClick={handleNav} className='rounded-full shadow-lg bg-[#4f0230] shadow-gray-400 p-3 cursor-pointer'>
                                 <AiOutlineClose />
                             </div>
                         </div>
@@ -84,19 +84,19 @@ export default function Navbar() {
                         </ul>
 
                         <div className="pt-40">
-                            <p className="uppercase tracking-widest text-[#d6909b]">Lets Connect</p>
+                            <p className="uppercase tracking-widest text-[#4f0230]">Lets Connect</p>
                             <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                                 <div className="rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                                    <FaLinkedin className="text-[#d6909b]" />
+                                    <FaLinkedin className="text-[#4f0230]" />
                                 </div>
                                 <div className="rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                                    <FaGithub className="text-[#d6909b]" />
+                                    <FaGithub className="text-[#4f0230]" />
                                 </div>
                                 <div className="rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                                    <AiOutlineMail className="text-[#d6909b]" />
+                                    <AiOutlineMail className="text-[#4f0230]" />
                                 </div>
                                 <div className="rounded-full shadow-lg shadow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                                    <BsFillPersonLinesFill className="text-[#d6909b]" />
+                                    <BsFillPersonLinesFill className="text-[#4f0230]" />
                                 </div>
                             </div>
                         </div>

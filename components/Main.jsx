@@ -8,28 +8,39 @@ export default function Main() {
 
     return (
         <>
+             <div className=' bg-blend '>
+                <img src='/assets/profile.jpg' alt='/' className=' relative
+                h-[20rem] object-contain object-right-bottom flex w-full items-center justify-center mt-1 lg:h-[26.7rem] lg:object-center lg:h-[27rem] lg:object-cover lg:mt-14' />
+
+                <div className='
+                absolute top-0 left-[9.5rem] backdrop-blur-sm pb-4 pl-1 pt-20 mt-3 whitespace-pre-line
+                lg:left-[29rem] lg:pt-[6rem] lg:p-6 lg:left-[32rem] 
+                '>
+                    <div className='text-2xl mb-[3rem] text-black lg:text-5xl'>
+                    <section className='text-xl font-bold'>Hello, Im </section>
+                    <section className='text-white font-bold'>Angelika Selviyan</section>
+                    <section className='text-xl font-bold'>Software Developer</section> 
+                    </div>   
+                    <About/>
+                </div>
+            </div>
+                {/* <p className='text-black'>rito stsigj;ogkjrgokjgsjfghsfjghfdgjhfg;jsfhgsljghsflgjhdfglksjfhgldsfkjghdflkjghfdgiogjarog;ahro[ghrg[oi</p> */}
+
             <section className="se-container">
                 <div className="se-slope">
                     <article className="se-content">
-                        <div className='w-full text-center'>
-                            <div>
-                                <Image src='/assets/profilePic3.PNG' alt='/' width='260' height='240' className='rounded-full' />
-                                <h2 className='mb-4'>Angelika Selviyan</h2>
-                                <p className=' font-medium BigFirstLetter'>I&apos;m a Software Developer with a creative mindset who believes that art and programming are intertwined. Both allow you to express your unique vision. The values I bring are collaboration through a friendly personal demeanor, an optimistic mindset, and a solution-focused mentality which comes from a strong drive to learn more about a problem and never give up on it. </p>
-                            </div>
-
-                        </div>
+                        <Skills />
                     </article>
                 </div >
                 <div className="se-slope">
                     <article className="se-content">
-                        <About />
+                        
                     </article>
                 </div>
 
                 <div className="se-slope">
                     <article className="se-content">
-                        <Skills />
+                      
                     </article>
                 </div>
 

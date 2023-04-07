@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-[#FF8FAB] text-white tracking-wide
+    @apply bg-white text-white tracking-wide
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -19,30 +19,28 @@
     @apply text-3xl sm:text-4xl
   }
 
-  li {
-    
-  }
  
 }
   .se-container{
 	display: block;
 	width: 100%;
 	overflow: hidden;
-	padding-top: 180px;
+	/* padding-top: 18px; */
 }
 
 .se-slope{
-	margin: 0 -65px;
+	margin: 0 -50px;
 	transform-origin: left center;
 }
-.se-slope:nth-child(odd){
-	background: rgb(255, 255, 255);
+.se-slope:nth-child(even){
+	background: #4f0230;
+	background-image: linear-gradient(to bottom right, white, #4f0230, white);
 	transform: rotate(5deg);
 	margin-top: -200px;
 	box-shadow: 0px -1px 3px rgba(255, 255, 255, 0.4);
 }
-.se-slope:nth-child(even){
-	background: #FF8FAB;
+.se-slope:nth-child(odd){
+	background-color: white; /* For browsers that do not support gradients */
 	transform: rotate(-5deg);
 	box-shadow: 0px 2px 3px rgba(255, 255, 255, 0.4) inset;
 }
@@ -51,7 +49,7 @@
 	margin: 0 auto;
 }
 
-.se-content h3{
+/* .se-content h3{
 	font-size: 40px;
 	position: relative;
 	display: inline-block;
@@ -62,15 +60,15 @@
 	border-radius: 30px;
 	font-family: 'Bitter', 'Trebuchet MS', Arial;
 	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9);
-}
-.se-slope:nth-child(odd) .se-content h3{
-	background: #FF8FAB;
+} */
+/* .se-slope:nth-child(odd) .se-content h3{
+	background: #4f0230;
 	color: rgb(255, 255, 255);
 }
 .se-slope:nth-child(even) .se-content h3{
 	background: rgb(255, 255, 255);
-	color: #FF8FAB;
-}
+	color: #4f0230;
+} */
 /* .se-content h3:before{
 	content: '';
 	width: 0;
@@ -94,13 +92,13 @@
 	top: 0px;
 } */
 
-.se-slope:nth-child(odd) .se-content h3:before,
+/* .se-slope:nth-child(odd) .se-content h3:before,
 .se-slope:nth-child(odd) .se-content h3:after{
-	border-right-color: #FF8FAB;
-	border-left-color: #FF8FAB;
-}
+	border-right-color: #4f0230;
+	border-left-color: #4f0230;
+} */
 
-.se-content p{
+/* .se-content p{
 	width: 75%;
 	max-width: 700px;
 	margin: 0 auto;
@@ -108,9 +106,9 @@
 	font-size: 30px;
 	line-height: 30px;
 	padding-top: 10px;
-}
+} */
 
-.BigFirstLetter:first-letter{
+/* .BigFirstLetter:first-letter{
 	font-size: 50px;
 	font-family: 'Adobe Garamond Pro', Georgia, serif;
 }
@@ -121,33 +119,64 @@
 
 #regularH3 {
 	font-size: 40px;
+} */
+
+.se-slope:nth-child(even) .se-content{
+	transform: rotate(-5deg);
+	color: white;
+	padding: 130px 100px 250px 100px;
+}
+.se-slope:nth-child(odd) .se-content{
+	transform: rotate(5deg);
+	color: #4f0230;
+	padding: 150px 100px 250px 100px;
 }
 
-.se-slope:nth-child(odd) .se-content{
-	transform: rotate(-5deg);
-	color: #FB6F92;
-	padding: 150px 100px 300px 100px;
-}
-.se-slope:nth-child(even) .se-content{
-	transform: rotate(5deg);
-	color: rgb(255, 255, 255);
-	padding: 150px 100px 300px 100px;
-}
+
 
 @media screen and (max-width: 900px) {
- .se-slope:nth-child(odd) .se-content{
-	transform: rotate(-5deg);
-	color: #FF8FAB;
-	padding: 70px 100px 100px 100px;
-}
+	.se-container{
+		display: block;
+		width: 100%;
+		overflow: hidden;
+	}
+	
+	.se-slope{
+		margin: 0 -50px;
+		transform-origin: left center;
+	}
 
-.se-slope:nth-child(even) .se-content{
-	transform: rotate(5deg);
-	color: rgb(255, 255, 255);
-	padding: 70px 100px 250px 100px;
-}
+	.se-slope:nth-child(even){
+		background: #4f0230;
+		background-image: linear-gradient(to bottom right, white, #4f0230, white);
+		transform: rotate(2deg);
+		margin-top: -200px;
+		box-shadow: 0px -1px 3px rgba(255, 255, 255, 0.4);
+	}
 
-#regularP {
+	.se-slope:nth-child(odd){
+		background-color: white; /* For browsers that do not support gradients */
+		transform: rotate(-2deg);
+		box-shadow: 0px 2px 3px rgba(255, 255, 255, 0.4) inset;
+	}
+	
+	.se-content{
+		margin: 0 auto;
+	}
+	
+	.se-slope:nth-child(odd) .se-content{
+		transform: rotate(2deg);
+		color: #4f0230;
+		padding: 70px 80px 250px 80px;
+	}
+
+	.se-slope:nth-child(even) .se-content{
+		transform: rotate(-2deg);
+		color: white;
+		padding: 130px 100px 250px 100px;
+	}
+
+/* #regularP {
 	font-size: 20px;
 	font-style: italic;
 }
@@ -165,8 +194,19 @@
 	margin-bottom: 20px;
 	border-radius: 30px;
 	font-family: 'Bitter', 'Trebuchet MS', Arial;
-	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9);
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9); */
+/* } */
+
+
+svg text {
+	opacity: 0;
 }
+svg text:hover {
+	opacity: 1;
+}
+
+
+  
 
 
 }

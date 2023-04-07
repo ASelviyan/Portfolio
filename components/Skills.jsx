@@ -1,4 +1,17 @@
 import Image from 'next/image'
+import CssIcon from '../components/SkillIconsSvg/Css-Icon'
+import HtmlIcon from '../components/SkillIconsSvg/Html-Icon'
+import JavascriptIcon from '../components/SkillIconsSvg/Javascript-Icon'
+import SqlIcon from '../components/SkillIconsSvg/Sql-Icon'
+import ReactIcon from '../components/SkillIconsSvg/React-Icon'
+import NextJsIcon from '../components/SkillIconsSvg/NextJs-Icon'
+import NodeJsIcon from '../components/SkillIconsSvg/NodeJs-Icon'
+import MongoJsIcon from '../components/SkillIconsSvg/MongoJs-Icon'
+import PostgreSqlIcon from '../components/SkillIconsSvg/PostgreSql-Icon'
+import BootstrapCssIcon from '../components/SkillIconsSvg/BootstrapCss-Icon'
+import PythonIcon from '../components/SkillIconsSvg/Python-Icon'
+import TailwindCssIcon from '../components/SkillIconsSvg/TailwindCss-Icon'
+import JavaIcon from '../components/SkillIconsSvg/Java-Icon'
 
 
 export default function Skills() {
@@ -8,51 +21,57 @@ export default function Skills() {
             <h2>Skills</h2>
             <div className='flex flex-wrap items-center justify-center' id='skills'>
                 <div className='m-5'>
-                    <Image src='/assets/portfolio/css.png' alt='/' width='180' height='180' className='m-4' />
+                    <CssIcon />
                 </div>
 
                 <div className='m-5'>
-                    <Image src='/assets/portfolio/html.png' alt='/' width='160' height='160' className='m-4' />
+                    <HtmlIcon />
                 </div>
 
                 <div className='m-5'>
-                    <Image src='/assets/portfolio/js.png' alt='/' width='170' height='190' className='mx-4 mb-2' />
+                    <JavascriptIcon />
                 </div>
 
                 <div className='m-5'>
-                    <Image src='/assets/portfolio/sql.png' alt='/' width='140' height='140' className='m-4' />
+                    <JavaIcon />
+                </div>
+
+
+                <div className='m-5'>
+                    <SqlIcon />
                 </div>
 
                 <div className='m-5'>
-                    <Image src='/assets/portfolio/react.png' alt='/' width='140' height='140' className='m-4' />
+                   <ReactIcon />
                 </div>
 
                 <div className='m-5'>
-                    <Image src='/assets/portfolio/next.png' alt='/' width='140' height='140' className='m-6' />
+                    <NextJsIcon />
                 </div>
 
                 <div className='m-5'>
-                    <Image src='/assets/portfolio/node.png' alt='/' width='170' height='90' className='m-4' />
+                    <NodeJsIcon />
+                   
                 </div>
 
                 <div className='m-5'>
-                    <Image src='/assets/portfolio/mongo.png' alt='/' width='190' height='90' className='m-4' />
+                   <MongoJsIcon />
                 </div>
 
                 <div className='m-5'>
-                    <Image src='/assets/portfolio/postgres.png' alt='/' width='230' height='50' className='m-4' />
+                    <PostgreSqlIcon />
                 </div>
 
                 <div className='m-5'>
-                    <Image src='/assets/portfolio/bootstrap1.png' alt='/' width='260' height='100' className='m-4' />
+                    <BootstrapCssIcon />
                 </div>
 
                 <div className='m-5'>
-                    <Image src='/assets/portfolio/python.png' alt='/' width='190' height='60' className='ml-16' />
+                    <PythonIcon />
                 </div>
 
                 <div className='m-5'>
-                    <Image src='/assets/portfolio/tailwind.png' alt='/' width='230' height='40' className='m-4' />
+                    <TailwindCssIcon />
                 </div>
             </div>
         </>
