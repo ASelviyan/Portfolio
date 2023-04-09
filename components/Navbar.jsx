@@ -16,7 +16,7 @@ export default function Navbar() {
         <div className="fixed top-0  w-full h-[3.5rem] shadow-xl z-[100] bg-[#4f0230] lg:h-20 ">
 
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-                <h1>AS</h1>
+                <h1 className="m-4">AS</h1>
                 <div>
                     <ul className="hidden md:flex">
                         <Link href='/'>

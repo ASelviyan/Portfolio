@@ -18,9 +18,9 @@ export default function Skills() {
     return (
         <>
 
-            <h2>Skills</h2>
-            <div className='flex flex-wrap items-center justify-center' id='skills'>
-                <div className='m-5'>
+            <h2 className='text-5xl'>My Abilities</h2>
+            <div className='flex flex-wrap items-center justify-center' >
+                <div className='m-5 z-0'>
                     <CssIcon />
                 </div>
 
