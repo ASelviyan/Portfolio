@@ -20,7 +20,7 @@ export default function Skills() {
 
             <h2 className='text-5xl'>My Abilities</h2>
             <div className='flex flex-wrap items-center justify-center' >
-                <div className='m-5 z-0'>
+                <div className='m-5'>
                     <CssIcon />
                 </div>
 
