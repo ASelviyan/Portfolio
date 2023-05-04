@@ -2,14 +2,14 @@ import React from "react";
 
 function Icon() {
   return (
-    <div  className="group block">
+    <div  className="relative group block">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="75"
         height="75"
         version="1.1"
         viewBox="0 0 600 600"
-        className="relative group-hover:opacity-10"
+        className="group-hover:opacity-10"
       >
         <path
           style={{ InkscapeStroke: "none" }}
@@ -20,7 +20,7 @@ function Icon() {
           paintOrder="stroke fill markers"
         ></path>
       </svg>
-      <p className="absolute lg:top-[12rem] lg:left-[47.8rem] md:top-[12rem] md:left-[11.7rem] top-[11rem] left-[9rem]  font-semibold text-black text-2xl z-0 opacity-0 group-hover:opacity-100">
+      <p className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 font-semibold text-black text-2xl z-0 opacity-0 group-hover:opacity-100">
         SQL
       </p>
     </div>

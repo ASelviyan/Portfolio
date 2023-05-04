@@ -6,12 +6,16 @@ import SqlIcon from '../components/SkillIconsSvg/Sql-Icon'
 import ReactIcon from '../components/SkillIconsSvg/React-Icon'
 import NextJsIcon from '../components/SkillIconsSvg/NextJs-Icon'
 import NodeJsIcon from '../components/SkillIconsSvg/NodeJs-Icon'
+import ExpressJSIcon from '../components/SkillIconsSvg/ExpressJS-Icon'
 import MongoJsIcon from './SkillIconsSvg/MongoDB-Icon'
 import PostgreSqlIcon from '../components/SkillIconsSvg/PostgreSql-Icon'
 import BootstrapCssIcon from '../components/SkillIconsSvg/BootstrapCss-Icon'
 import PythonIcon from '../components/SkillIconsSvg/Python-Icon'
 import TailwindCssIcon from '../components/SkillIconsSvg/TailwindCss-Icon'
 import JavaIcon from '../components/SkillIconsSvg/Java-Icon'
+import GitIcon from './SkillIconsSvg/Git-Icon'
+import GithubIcon from './SkillIconsSvg/Github-Icon'
+import SequelizeIcon from './SkillIconsSvg/Sequelize-Icon'
 
 
 export default function Skills() {
@@ -36,9 +40,21 @@ export default function Skills() {
                     <JavaIcon />
                 </div>
 
-
                 <div className='m-5'>
                     <SqlIcon />
+                </div>
+
+
+                <div className='m-5'>
+                   <GitIcon />
+                </div>
+
+                <div className='m-5'>
+                    <NextJsIcon />
+                </div>
+                
+                <div className='m-5'>
+                    <NodeJsIcon />
                 </div>
 
                 <div className='m-5'>
@@ -46,16 +62,15 @@ export default function Skills() {
                 </div>
 
                 <div className='m-5'>
-                    <NextJsIcon />
-                </div>
-
-                <div className='m-5'>
-                    <NodeJsIcon />
-                   
+                    <ExpressJSIcon />
                 </div>
 
                 <div className='m-5'>
                    <MongoJsIcon />
+                </div>
+
+                <div className='m-5'>
+                   <GithubIcon />
                 </div>
 
                 <div className='m-5'>
@@ -64,6 +79,10 @@ export default function Skills() {
 
                 <div className='m-5'>
                     <BootstrapCssIcon />
+                </div>
+
+                <div className='m-5'>
+                    <SequelizeIcon />
                 </div>
 
                 <div className='m-5'>
