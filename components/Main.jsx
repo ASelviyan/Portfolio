@@ -2,6 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import About from '../components/About'
 import Skills from '../components/Skills'
+import Greeting from '../components/Greeting'
+import ProjectBox from './ProjectBox'
 
 
 export default function Main() {
@@ -16,10 +18,8 @@ export default function Main() {
                 absolute top-0 left-[9.5rem] backdrop-blur-sm pb-4 pl-1 pt-20 mt-3  whitespace-pre-line
                 lg:left-[29rem] lg:pt-[6rem] lg:p-6 lg:left-[32rem] lg:mr-1
                 '>
-                    <div className='text-2xl mb-[1rem] lg:mb-[3rem] text-black lg:text-5xl'>
-                    <section className='lg:text-xl font-bold'><h2>Hello, Im</h2></section>
-                    <section className='text-white font-bold'><h1>Angelika Selviyan</h1></section>
-                    <section className='lg:text-xl font-bold'><h2>Software Developer</h2></section> 
+                    <div className='text-2xl mb-[1rem] lg:mb-[3rem] lg:text-5xl'>
+                        <Greeting />
                     </div>   
                     <About/>
                 </div>
@@ -34,7 +34,12 @@ export default function Main() {
                 </div >
                 <div className="se-slope">
                     <article className="se-content">
-                        
+                        <div className='flex items-center justify-center '>
+                                <ProjectBox />
+                                <ProjectBox />
+                                <ProjectBox />
+                                <ProjectBox />
+                        </div>
                     </article>
                 </div>
 

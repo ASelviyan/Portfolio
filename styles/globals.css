@@ -7,7 +7,7 @@
     @apply bg-white text-white tracking-wide
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6, span, section{
 	font-family: 'Dancing Script', cursive;
     @apply font-bold
   }
@@ -49,78 +49,6 @@
 .se-content{
 	margin: 0 auto;
 }
-
-/* .se-content h3{
-	font-size: 40px;
-	position: relative;
-	display: inline-block;
-	padding: 10px 30px 8px 30px;
-	height: 100px;
-	line-height: 80px;
-	margin-bottom: 20px;
-	border-radius: 30px;
-	font-family: 'Bitter', 'Trebuchet MS', Arial;
-	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9);
-} */
-/* .se-slope:nth-child(odd) .se-content h3{
-	background: #4f0230;
-	color: rgb(255, 255, 255);
-}
-.se-slope:nth-child(even) .se-content h3{
-	background: rgb(255, 255, 255);
-	color: #4f0230;
-} */
-/* .se-content h3:before{
-	content: '';
-	width: 0;
-	height: 0;
-	border-top: 38px solid transparent;
-	border-bottom: 60px solid transparent;
-	border-right: 60px solid rgb(255, 255, 255);
-	position: absolute;
-	left: -59px;
-	top: 0px;
-} */
-/* .se-content h3:after{
-	content: '';
-	width: 0;
-	height: 0;
-	border-top: 38px solid transparent;
-	border-bottom: 60px solid transparent;
-	border-left: 60px solid rgb(255, 255, 255);
-	position: absolute;
-	right: -59px;
-	top: 0px;
-} */
-
-/* .se-slope:nth-child(odd) .se-content h3:before,
-.se-slope:nth-child(odd) .se-content h3:after{
-	border-right-color: #4f0230;
-	border-left-color: #4f0230;
-} */
-
-/* .se-content p{
-	width: 75%;
-	max-width: 700px;
-	margin: 0 auto;
-	font-style: italic;
-	font-size: 30px;
-	line-height: 30px;
-	padding-top: 10px;
-} */
-
-/* .BigFirstLetter:first-letter{
-	font-size: 50px;
-	font-family: 'Adobe Garamond Pro', Georgia, serif;
-}
-#regularP {
-	font-size: 25px;
-	font-style: italic;
-}
-
-#regularH3 {
-	font-size: 40px;
-} */
 
 .se-slope:nth-child(even) .se-content{
 	transform: rotate(-5deg);
@@ -177,33 +105,24 @@
 		padding: 130px 100px 250px 100px;
 	}
 
-/* #regularP {
-	font-size: 20px;
-	font-style: italic;
+.greetingAnimation{
+	animation: typing 2s steps(17), blink .5s step-end infinite alternate;
+	overflow: hidden;
+	border-right: 3px solid ;
+	color: pink
 }
 
-#regularH3 {
-	font-size: 25px;
+@keyframes typing {
+	from{
+		width: 0%;
+	}
+	
 }
 
-.se-content h3{
-	font-size: 20px;
-	position: relative;
-	display: inline-block;
-	height: 100px;
-	line-height: 80px;
-	margin-bottom: 20px;
-	border-radius: 30px;
-	font-family: 'Bitter', 'Trebuchet MS', Arial;
-	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9); */
-/* } */
-
-
-svg text {
-	opacity: 0;
-}
-svg text:hover {
-	opacity: 1;
+@keyframes blink {
+	60%{
+		border-color: transparent;
+	}
 }
 
 
