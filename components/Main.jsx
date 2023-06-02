@@ -3,7 +3,7 @@ import Image from 'next/image'
 import About from '../components/About'
 import Skills from '../components/Skills'
 import Greeting from '../components/Greeting'
-import ProjectBox from './ProjectBox'
+import ProjectBox from './ProjectSection'
 
 
 export default function Main() {
@@ -34,10 +34,7 @@ export default function Main() {
                 </div >
                 <div className="se-slope">
                     <article className="se-content">
-                        <div className='flex items-center justify-center '>
-                                <ProjectBox />
-                                <ProjectBox />
-                                <ProjectBox />
+                        <div className='grid grid-cols-2 '>
                                 <ProjectBox />
                         </div>
                     </article>
