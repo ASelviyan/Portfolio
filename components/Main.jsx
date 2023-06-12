@@ -24,8 +24,7 @@ export default function Main() {
                     <About/>
                 </div>
             </div>
-                {/* <p className='text-black'>rito stsigj;ogkjrgokjgsjfghsfjghfdgjhfg;jsfhgsljghsflgjhdfglksjfhgldsfkjghdflkjghfdgiogjarog;ahro[ghrg[oi</p> */}
-
+                
             <section className="se-container">
                 <div className="se-slope">
                     <article className="se-content">
@@ -34,8 +33,9 @@ export default function Main() {
                 </div >
                 <div className="se-slope">
                     <article className="se-content">
-                        <div className='grid grid-cols-2 '>
+                        <div className='grid grid-cols-2 items-center justify-items-center'>
                                 <ProjectBox />
+                                
                         </div>
                     </article>
                 </div>
