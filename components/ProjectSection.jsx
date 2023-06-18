@@ -77,22 +77,23 @@ export default function(){
     ])
     return (
         <>
-                { 
-                    projects.map((project) =>  (
-                            <div  key={project.id} className="grid items-center justify-items-center bg-white m-5 h-[40rem] border-4 w-[26rem] border-white p-6 text-center rounded-lg">
-                                <h2 className="mb-4 text-[#ab0569]">{project.name}</h2>
-                                <Image src={project.visual.image} alt={project.visual.alt} width={project.visual.width} height={project.visual.height} className="rounded-lg border-2 border-white m-full h-auto" />
-                                <div className="flex justify-around items-center text-white mt-4">
-                                    {project.skills.map(skill => (skill))}
-                                </div>
-                                <p className="text-[#4f0230] text-center font-serif font-normal m-3 text-sm">{project.description}</p>
-                                <div className="flex">
-                                    <a href={project.links.repo} target="_blank" className="bg-gradient-to-r from-[#4f0230] via-[#ab0569] to-[#4f0230] m-2 px-6 py-2 rounded-full text-lg">Repo</a>
-                                    <a href={project.links.live} target="_blank" className="bg-gradient-to-r from-[#ab0569] via-[#4f0230] to-[#ab0569] m-2 px-6 py-2 rounded-full text-lg">Live</a>
-                                </div>
-                            </div> 
-                        ))
-                }
+
+            { 
+                 projects.map((project) =>  (
+                        <div  key={project.id} className="grid items-center justify-items-center bg-white m-5 h-[40rem] border-4 w-[26rem] border-white p-6 text-center rounded-lg drop-shadow-2xl">
+                            <h2 className="mb-4 text-[#ab0569]">{project.name}</h2>
+                            <Image src={project.visual.image} alt={project.visual.alt} width={project.visual.width} height={project.visual.height} className="rounded-lg border-2 border-white m-full h-auto" />
+                            <div className="flex justify-around items-center text-white mt-4">
+                                {project.skills.map(skill => (skill))}
+                            </div>
+                            <p className="text-[#4f0230] text-center font-serif font-normal m-3 text-sm">{project.description}</p>
+                            <div className="flex">
+                                <a href={project.links.repo} target="_blank" className="bg-gradient-to-r from-[#4f0230] via-[#ab0569] to-[#4f0230] m-2 px-6 py-2 rounded-full text-lg">Repo</a>
+                                <a href={project.links.live} target="_blank" className="bg-gradient-to-r from-[#ab0569] via-[#4f0230] to-[#ab0569] m-2 px-6 py-2 rounded-full text-lg">Live</a>
+                            </div>
+                        </div> 
+                    ))
+            }
         </>
     )
 }

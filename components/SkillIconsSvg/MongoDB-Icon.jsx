@@ -2,7 +2,7 @@ import React from "react";
 
 function Icon() {
   return (
-    <div  className="relative group block">
+    <div  className="relative group block drop-shadow-lg">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="95"

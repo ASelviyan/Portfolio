@@ -11,12 +11,9 @@ export default function Main() {
     return (
         <>
              <div >
-                <img src='/assets/profile.jpg' alt='/' className='relative
-                h-[20rem] object-contain object-right-bottom flex w-full items-center justify-center mt-4 lg:h-[38rem] lg:object-center lg:h-[27rem] lg:object-cover lg:mt-20' />
+                <img src='/assets/profile.jpg' alt='/' className='flex items-center justify-center relative  w-full object-center object-cover object-contain object-right-bottom h-[28rem] mt-20 lg:h-[37rem] lg:mt-30' />
 
-                <div className='absolute top-[10rem] left-[9.5rem] backdrop-blur-sm pb-4 pl-1 pt-20   whitespace-pre-line
-                lg:left-[29rem]  lg:p-6 lg:left-[32rem] lg:mr-1
-                '>
+                <div className='blurEffectSize backdrop-blur-sm pb-4 pl-1 pt-5 whitespace-pre-line lg:p-6 lg:mr-1'>
                     <div className='text-2xl mb-[1rem] lg:mb-[3rem] lg:text-5xl'>
                         <Greeting />
                     </div>   
@@ -32,9 +29,10 @@ export default function Main() {
                 </div >
                 <div className="se-slope">
                     <article className="se-content">
-                        <div className='grid grid-cols-2 items-center justify-items-center'>
-                                <ProjectBox />
-                                
+                        <h2 className='text-[#4f0230] text-5xl m-5'>My Projects</h2>
+                        <div className='grid grid-cols-1  lg:grid-cols-2 items-center justify-items-center'>
+                            
+                                <ProjectBox />  
                         </div>
                     </article>
                 </div>

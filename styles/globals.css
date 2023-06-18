@@ -22,13 +22,13 @@
 
  
 }
-  .se-container{
+
+.se-container{
 	display: block;
 	width: 100%;
 	overflow: hidden;
 	/* padding-top: 18px; */
 }
-
 .se-slope{
 	margin: 0 -50px;
 	transform-origin: left center;
@@ -37,7 +37,7 @@
 	background: #4f0230;
 	background-image: linear-gradient(to bottom right, white, #4f0230, white);
 	transform: rotate(3deg);
-	margin-top: -200px;
+	margin-top: -250px;
 	box-shadow: 0px -1px 3px rgba(255, 255, 255, 0.4);
 }
 .se-slope:nth-child(odd){
@@ -45,15 +45,13 @@
 	transform: rotate(-5deg);
 	box-shadow: 0px 2px 3px rgba(255, 255, 255, 0.4) inset;
 }
-
 .se-content{
 	margin: 0 auto;
 }
-
 .se-slope:nth-child(even) .se-content{
 	transform: rotate(-3deg);
 	color: white;
-	padding: 130px 100px 250px 100px;
+	padding: 30px 100px 250px 100px;
 }
 .se-slope:nth-child(odd) .se-content{
 	transform: rotate(5deg);
@@ -61,9 +59,19 @@
 	padding: 80px 100px 250px 100px;
 }
 
+@layer utilities{
+	.blurEffectSize{
+		position: absolute;
+		top: 20rem;
+		left: 20rem 
+	}
+	
+}
 
 
-@media screen and (max-width: 900px) {
+
+
+@media screen and (max-width: 1000px) {
 	.se-container{
 		display: block;
 		width: 100%;
@@ -102,14 +110,25 @@
 	.se-slope:nth-child(even) .se-content{
 		transform: rotate(-2deg);
 		color: white;
-		padding: 130px 100px 250px 100px;
+		padding: 50px 100px 250px 100px;
+		.blurEffectSize{
+		top: 2rem
 	}
-
+	@layer utilities{
+		.blurEffectSize{
+			position: absolute;
+			top: 8rem;
+			left: 20rem 
+		}
+	}
+	
+	}
+	
 .greetingAnimation{
 	animation: typing 2s steps(17), blink .5s step-end infinite alternate;
 	overflow: hidden;
 	border-right: 3px solid ;
-	color: pink
+	
 }
 
 @keyframes typing {

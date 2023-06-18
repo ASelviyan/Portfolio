@@ -22,9 +22,9 @@ export default function Skills() {
     return (
         <>
 
-            <h2 className='text-5xl'>My Abilities</h2>
+            <h2 className='text-5xl mt-4'>My Abilities</h2>
             <div className='flex flex-wrap items-center justify-center' >
-                <div className='m-5'>
+                <div className='m-5 '>
                     <CssIcon />
                 </div>
 
