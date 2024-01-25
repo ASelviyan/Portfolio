@@ -6,7 +6,7 @@ function Icon() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 32 32"
-        fill="#ab0569"
+        fill="white"
         width="110"
         height="110"
         className=" group-hover:opacity-10 "

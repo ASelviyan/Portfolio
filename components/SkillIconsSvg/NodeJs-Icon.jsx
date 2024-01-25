@@ -9,7 +9,7 @@ function Icon() {
         height="100"
         preserveAspectRatio="xMidYMid"
         viewBox="0 0 32 32"
-        fill="#ab0569"
+        fill="white"
         className="group-hover:opacity-10"
       >
       

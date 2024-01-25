@@ -5,6 +5,7 @@
 @layer base {
   body {
     @apply bg-white text-white tracking-wide
+	
   }
 
   h1, h2, h3, h4, h5, h6, span, section{
@@ -27,17 +28,17 @@
 	display: block;
 	width: 100%;
 	overflow: hidden;
-	/* padding-top: 18px; */
+	padding-top: 120px;
 }
 .se-slope{
-	margin: 0 -50px;
+	margin: 0 -85px;
 	transform-origin: left center;
 }
 .se-slope:nth-child(even){
 	background: #4f0230;
 	background-image: linear-gradient(to bottom right, white, #4f0230, white);
 	transform: rotate(3deg);
-	margin-top: -250px;
+	margin-top: -200px;
 	box-shadow: 0px -1px 3px rgba(255, 255, 255, 0.4);
 }
 .se-slope:nth-child(odd){
@@ -51,22 +52,14 @@
 .se-slope:nth-child(even) .se-content{
 	transform: rotate(-3deg);
 	color: white;
-	padding: 30px 100px 250px 100px;
+	padding: 80px 100px 250px 100px;
 }
 .se-slope:nth-child(odd) .se-content{
 	transform: rotate(5deg);
 	color: #4f0230;
-	padding: 80px 100px 250px 100px;
+	padding: 0px 80px 250px 80px;
 }
 
-@layer utilities{
-	.blurEffectSize{
-		position: absolute;
-		top: 20rem;
-		left: 20rem 
-	}
-	
-}
 
 
 
@@ -111,16 +104,6 @@
 		transform: rotate(-2deg);
 		color: white;
 		padding: 50px 100px 250px 100px;
-		.blurEffectSize{
-		top: 2rem
-	}
-	@layer utilities{
-		.blurEffectSize{
-			position: absolute;
-			top: 8rem;
-			left: 20rem 
-		}
-	}
 	
 	}
 	
