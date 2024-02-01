@@ -31,7 +31,7 @@ export default function(){
         {
             name: 'Bug Out',
             visual: {
-                image:'/assets/projects/bugOut.png',
+                image:'/assets/projects/bugOut1.PNG',
                 alt: 'Bug Out Picture',
                 width: 300,
                 height: 250
@@ -81,18 +81,24 @@ export default function(){
             { 
                  projects.map((project) =>  (
                         <div  key={project.id} className="grid items-center justify-items-center bg-white m-5 h-[40rem] border-4 w-[26rem] border-white p-6 text-center rounded-lg drop-shadow-2xl">
-                            <h2 className="mb-4 text-[#ab0569]">{project.name}</h2>
-                            <Image src={project.visual.image} alt={project.visual.alt} width={project.visual.width} height={project.visual.height} className="rounded-lg border-2 border-white m-full h-auto" />
+                            <h2 className="mb-4 text-[#4f0230]">{project.name}</h2>
+                            <div className="max-width:1320px;display:block">
+                                <Image src={project.visual.image} alt={project.visual.alt} width={project.visual.width} height={project.visual.height} className="rounded-lg border-2 border-white m-full h-auto" />
+
+                            </div>
                             <div className="flex justify-around items-center text-white mt-4">
                                 {project.skills.map(skill => (skill))}
                             </div>
                             <p className="text-[#4f0230] text-center font-serif font-normal m-3 text-sm">{project.description}</p>
                             <div className="flex">
-                                <a href={project.links.repo} target="_blank" className="bg-gradient-to-r from-[#4f0230] via-[#ab0569] to-[#4f0230] m-2 px-6 py-2 rounded-full text-lg">Repo</a>
-                                <a href={project.links.live} target="_blank" className="bg-gradient-to-r from-[#ab0569] via-[#4f0230] to-[#ab0569] m-2 px-6 py-2 rounded-full text-lg">Live</a>
+                                <a href={project.links.repo} target="_blank" className=" bg-[#4f0230]  hover:scale-125 hover:bg-green-600  m-2 px-6 py-2 rounded-full text-lg">Repo</a>
+                                <a href={project.links.live} target="_blank" className="bg-[#4f0230]  hover:scale-125 hover:bg-green-600  m-2 px-6 py-2 rounded-full text-lg">Live</a>
                             </div>
                         </div> 
                     ))
+
+    //                 stroke-width="3%" stroke-linecap="round" stroke-linejoin="round" 
+    //   "group-hover:stroke-white"  
             }
         </>
     )
