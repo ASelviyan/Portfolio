@@ -10,7 +10,7 @@ import BootstrapCssIcon from './SkillIconsSvg/BootstrapCss-Icon'
 import PostgreSqlIcon from './SkillIconsSvg/PostgreSql-Icon'
 
 
-export default function(){
+export default function ProjectSection(){
 
     const [projects, setProjects] = useState([
         {
