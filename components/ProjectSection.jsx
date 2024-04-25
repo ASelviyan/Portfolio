@@ -90,12 +90,13 @@ export default function(){
                                 {project.skills.map((skill, index) => (
                                     <div key={index}>
                                         {skill}
-                                    </div> ))}
+                                    </div> 
+                                ))}
                             </div> 
                             <p className="text-[#4f0230] text-center font-serif font-normal m-3 text-sm">{project.description}</p>
                             <div className="flex">
-                                <a href={project.links.repo} target="_blank" className=" bg-[#4f0230]  hover:scale-125 hover:bg-green-600  m-2 px-6 py-2 rounded-full text-lg">Repo</a>
-                                <a href={project.links.live} target="_blank" className="bg-[#4f0230]  hover:scale-125 hover:bg-green-600  m-2 px-6 py-2 rounded-full text-lg">Live</a>
+                                <a href={project.links.repo} target="_blank" rel="noreferrer" className=" bg-[#4f0230]  hover:scale-125 hover:bg-green-600  m-2 px-6 py-2 rounded-full text-lg">Repo</a>
+                                <a href={project.links.live} target="_blank" rel="noreferrer" className="bg-[#4f0230]  hover:scale-125 hover:bg-green-600  m-2 px-6 py-2 rounded-full text-lg">Live</a>
                             </div>
                         </div> 
                     ))

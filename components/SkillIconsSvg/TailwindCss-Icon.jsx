@@ -11,9 +11,9 @@ function Icon() {
         fill="#4f0230"
         d="M1 1L7 7L1 13"  
         stroke="#4f0230" 
-        stroke-width="3%"
-        stroke-linecap="round" 
-        stroke-linejoin="round" 
+        strokeWidth="3%"
+        strokeLinecap="round" 
+        strokeLinejoin="round" 
         className="group-hover:stroke-white" 
       >
         <path

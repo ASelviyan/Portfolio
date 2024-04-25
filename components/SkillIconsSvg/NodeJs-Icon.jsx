@@ -10,9 +10,9 @@ function Icon() {
         preserveAspectRatio="xMidYMid"
         viewBox="0 0 32 32"
         fill="#4f0230"
-        stroke-width="3%"
-        stroke-linecap="round" 
-        stroke-linejoin="round" 
+        strokeWidth="3%"
+        strokeLinecap="round" 
+        strokeLinejoin="round" 
         className="group-hover:stroke-white" 
       >
       

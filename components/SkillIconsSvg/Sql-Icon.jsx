@@ -10,9 +10,9 @@ function Icon() {
         version="1.1"
         viewBox="0 0 600 600"
         fill="#4f0230"
-        stroke-width="3%"
-        stroke-linecap="round" 
-        stroke-linejoin="round" 
+        strokeWidth="3%"
+        strokeLinecap="round" 
+        strokeLinejoin="round" 
         className="group-hover:stroke-white" 
       >
         <path

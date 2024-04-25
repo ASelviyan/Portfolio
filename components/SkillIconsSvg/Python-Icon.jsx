@@ -10,9 +10,9 @@ function Icon() {
         viewBox="0 0 30 30"
         fill="#4f0230"
         stroke="#4f0230" 
-        stroke-width="3%"
-        stroke-linecap="round" 
-        stroke-linejoin="round" 
+        strokeWidth="3%"
+        strokeLinecap="round" 
+        strokeLinejoin="round" 
         className="group-hover:stroke-white" 
       >
         <path d="M13 3a4 4 0 00-4 4v1h5a1 1 0 010 2H7a4 4 0 00-4 4v4a4 4 0 004 4h1v-5c0-1.654 1.346-3 3-3h8a1 1 0 001-1V7a4 4 0 00-4-4h-3zm-1 2a1 1 0 110 2 1 1 0 010-2zm10 3v5c0 1.654-1.346 3-3 3h-8a1 1 0 00-1 1v6a4 4 0 004 4h3a4 4 0 004-4v-1h-5a1 1 0 010-2h7a4 4 0 004-4v-4a4 4 0 00-4-4h-1zm-4 15a1 1 0 110 2 1 1 0 010-2z"></path>
