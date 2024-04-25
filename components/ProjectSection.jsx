@@ -79,15 +79,15 @@ export default function(){
         <>
 
             { 
-                 projects.map((project) =>  (
-                        <div  key={project.id} className="grid items-center justify-items-center bg-white m-5 h-[40rem] border-4 w-[26rem] border-white p-6 text-center rounded-lg drop-shadow-2xl">
+                 projects.map((project, index) =>  (
+                        <div  key={index} className="grid items-center justify-items-center bg-white m-5 h-[40rem] border-4 w-[26rem] border-white p-6 text-center rounded-lg drop-shadow-2xl">
                             <h2 className="mb-4 text-[#4f0230]">{project.name}</h2>
                             <div className="max-width:1320px;display:block">
                                 <Image src={project.visual.image} alt={project.visual.alt} width={project.visual.width} height={project.visual.height} className="rounded-lg border-2 border-white m-full h-auto" />
 
                             </div>
                             <div className="flex justify-around items-center text-white mt-4">
-                                {project.skills.map(skill => (skill))}
+                                {project.skills.map((skill, index )=> (skill, key={index}))}
                             </div>
                             <p className="text-[#4f0230] text-center font-serif font-normal m-3 text-sm">{project.description}</p>
                             <div className="flex">
