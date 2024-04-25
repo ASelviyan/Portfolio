@@ -87,8 +87,8 @@ export default function ProjectSection(){
 
                             </div>
                             <div className="flex justify-around items-center text-white mt-4">
-                                {project.skills.map((skill, index) => (
-                                    <div key={index}>
+                                {project.skills.map((skill, i) => (
+                                    <div key={i}>
                                         {skill}
                                     </div> 
                                 ))}
