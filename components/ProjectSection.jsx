@@ -22,7 +22,7 @@ export default function ProjectSection(){
                 width: 300,
                 height: 250
             },
-            skills: [1,2,3],
+            skills: [<ReactIcon/>, <MongoJsIcon />, <TailwindCssIcon />],
             description: 'Ensemble is a digital closet that allows you to upload pictures of your clothes, categorize them into sections, and edit or delete them.',
             links: {
                 repo:"https://github.com/ASelviyan/Ensemble-Client",
@@ -38,7 +38,7 @@ export default function ProjectSection(){
                 width: 300,
                 height: 250
             },
-            skills: [1,2,3],
+            skills: [<ReactIcon/>, <MongoJsIcon/>, <TailwindCssIcon/>],
             description: 'BugOut is a bug management system that allows users to easily submit, track, and resolve issues, with team commentary and different permission levels for managers and members.',
             links: {
                 repo:"https://github.com/ASelviyan/BugOut1-Client",
@@ -54,7 +54,7 @@ export default function ProjectSection(){
                 width: 300,
                 height: 250
             },
-            skills: [1,2,3],
+            skills: [<JavaScriptIcon />, <BootstrapCssIcon/>, <PostgreSqlIcon/>],
             description: 'Meet a Hero is a website where you can create, view, and comment on hero teams built to fight evil.',
             links: {
                 repo:"https://github.com/ASelviyan/Super-Hero",
@@ -70,7 +70,7 @@ export default function ProjectSection(){
                 width: 300,
                 height: 250
             },
-            skills: [1,2,3],
+            skills: [<HTMLIcon/>, <CSSIcon/>, <JavaScriptIcon/>],
             description: "The Matching Game is a one player game where you try to match numbers together until they are all matched. But it's not as easy as it sounds because you are playing against time.",
             links: {
                 repo:"https://github.com/ASelviyan/Matching_Game",
@@ -92,9 +92,7 @@ export default function ProjectSection(){
                             </div>
                             <div className="flex justify-around items-center text-white mt-4">
                                 {project.skills.map((skill, i) => (
-                                    
-                                    <div className="text-black"key={i}>{skill}</div> 
-                                   
+                                    <div key={i}>{skill}</div> 
                                 ))}
                             </div> 
                             <p className="text-[#4f0230] text-center font-serif font-normal m-3 text-sm">{project.description}</p>
