@@ -92,10 +92,9 @@ export default function ProjectSection(){
                             </div>
                             <div className="flex justify-around items-center text-white mt-4">
                                 {project.skills.map((skill, i) => (
-                                    <div>
-                                    <h1 className="text-black">{i}</h1>
+                                    
                                     <div className="text-black"key={i}>{skill}</div> 
-                                    </div>
+                                   
                                 ))}
                             </div> 
                             <p className="text-[#4f0230] text-center font-serif font-normal m-3 text-sm">{project.description}</p>
