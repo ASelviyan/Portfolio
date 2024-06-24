@@ -22,7 +22,7 @@ export default function ProjectSection(){
                 width: 300,
                 height: 250
             },
-            skills: [<ReactIcon/>, <MongoJsIcon />, <TailwindCssIcon />],
+            skills: [<ReactIcon key={1}/>, <MongoJsIcon key={2}/>, <TailwindCssIcon key={3}/>],
             description: 'Ensemble is a digital closet that allows you to upload pictures of your clothes, categorize them into sections, and edit or delete them.',
             links: {
                 repo:"https://github.com/ASelviyan/Ensemble-Client",
@@ -38,7 +38,7 @@ export default function ProjectSection(){
                 width: 300,
                 height: 250
             },
-            skills: [<ReactIcon/>, <MongoJsIcon/>, <TailwindCssIcon/>],
+            skills: [<ReactIcon key={1}/>, <MongoJsIcon key={2}/>, <TailwindCssIcon key={3}/>],
             description: 'BugOut is a bug management system that allows users to easily submit, track, and resolve issues, with team commentary and different permission levels for managers and members.',
             links: {
                 repo:"https://github.com/ASelviyan/BugOut1-Client",
@@ -54,7 +54,7 @@ export default function ProjectSection(){
                 width: 300,
                 height: 250
             },
-            skills: [<JavaScriptIcon />, <BootstrapCssIcon/>, <PostgreSqlIcon/>],
+            skills: [<JavaScriptIcon key={1}/>, <BootstrapCssIcon key={2}/>, <PostgreSqlIcon key={3}/>],
             description: 'Meet a Hero is a website where you can create, view, and comment on hero teams built to fight evil.',
             links: {
                 repo:"https://github.com/ASelviyan/Super-Hero",
@@ -70,7 +70,7 @@ export default function ProjectSection(){
                 width: 300,
                 height: 250
             },
-            skills: [<HTMLIcon/>, <CSSIcon/>, <JavaScriptIcon/>],
+            skills: [<HTMLIcon key={1}/>, <CSSIcon key={2}/>, <JavaScriptIcon key={3}/>],
             description: "The Matching Game is a one player game where you try to match numbers together until they are all matched. But it's not as easy as it sounds because you are playing against time.",
             links: {
                 repo:"https://github.com/ASelviyan/Matching_Game",
