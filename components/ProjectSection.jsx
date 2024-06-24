@@ -14,6 +14,7 @@ export default function ProjectSection(){
 
     const [projects, setProjects] = useState([
         {
+            id:1,
             name: 'Ensemble',
             visual: {
                 image: '/assets/projects/Ensemble1.PNG',
@@ -21,7 +22,7 @@ export default function ProjectSection(){
                 width: 300,
                 height: 250
             },
-            skills: [<ReactIcon/>, <MongoJsIcon />, <TailwindCssIcon />],
+            skills: [1,2,3],
             description: 'Ensemble is a digital closet that allows you to upload pictures of your clothes, categorize them into sections, and edit or delete them.',
             links: {
                 repo:"https://github.com/ASelviyan/Ensemble-Client",
@@ -29,6 +30,7 @@ export default function ProjectSection(){
             }
         },
         {
+            id:2,
             name: 'Bug Out',
             visual: {
                 image:'/assets/projects/bugOut1.PNG',
@@ -36,7 +38,7 @@ export default function ProjectSection(){
                 width: 300,
                 height: 250
             },
-            skills: [<ReactIcon/>, <MongoJsIcon/>, <TailwindCssIcon/>],
+            skills: [1,2,3],
             description: 'BugOut is a bug management system that allows users to easily submit, track, and resolve issues, with team commentary and different permission levels for managers and members.',
             links: {
                 repo:"https://github.com/ASelviyan/BugOut1-Client",
@@ -44,6 +46,7 @@ export default function ProjectSection(){
             }
         },
         {
+            id:3,
             name: 'Meet a Hero',
             visual: {
                 image:'/assets/projects/superHero1.png',
@@ -51,7 +54,7 @@ export default function ProjectSection(){
                 width: 300,
                 height: 250
             },
-            skills: [<JavaScriptIcon />, <BootstrapCssIcon/>, <PostgreSqlIcon/>],
+            skills: [1,2,3],
             description: 'Meet a Hero is a website where you can create, view, and comment on hero teams built to fight evil.',
             links: {
                 repo:"https://github.com/ASelviyan/Super-Hero",
@@ -59,6 +62,7 @@ export default function ProjectSection(){
             }
         },
         {
+            id:4, 
             name: 'Matching Game',
             visual: {
                 image:'/assets/projects/matchingGame1.png',
@@ -66,7 +70,7 @@ export default function ProjectSection(){
                 width: 300,
                 height: 250
             },
-            skills: [<HTMLIcon/>, <CSSIcon/>, <JavaScriptIcon/>],
+            skills: [1,2,3],
             description: "The Matching Game is a one player game where you try to match numbers together until they are all matched. But it's not as easy as it sounds because you are playing against time.",
             links: {
                 repo:"https://github.com/ASelviyan/Matching_Game",
@@ -79,8 +83,8 @@ export default function ProjectSection(){
         <>
 
             { 
-                 projects.map((project, index) =>  (
-                        <div  key={index} className="grid items-center justify-items-center bg-white m-5 h-[40rem] border-4 w-[26rem] border-white p-6 text-center rounded-lg drop-shadow-2xl">
+                 projects.map(project =>  (
+                        <div  key={project.id} className="grid items-center justify-items-center bg-white m-5 h-[40rem] border-4 w-[26rem] border-white p-6 text-center rounded-lg drop-shadow-2xl">
                             <h2 className="mb-4 text-[#4f0230]">{project.name}</h2>
                             <div className="max-width:1320px;display:block">
                                 <Image src={project.visual.image} alt={project.visual.alt} width={project.visual.width} height={project.visual.height} className="rounded-lg border-2 border-white m-full h-auto" />
@@ -88,7 +92,10 @@ export default function ProjectSection(){
                             </div>
                             <div className="flex justify-around items-center text-white mt-4">
                                 {project.skills.map((skill, i) => (
-                                    <div key={i}>{skill}</div> 
+                                    <div>
+                                    <h1 className="text-black">{i}</h1>
+                                    <div className="text-black"key={i}>{skill}</div> 
+                                    </div>
                                 ))}
                             </div> 
                             <p className="text-[#4f0230] text-center font-serif font-normal m-3 text-sm">{project.description}</p>
